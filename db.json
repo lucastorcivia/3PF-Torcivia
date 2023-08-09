@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "name": "Lucas",
+      "surname": "Torcivia",
+      "email": "lucastor@email.com",
+      "password": "123456",
+      "token": "bG1Ptx4ZztwJwAoyjxQy",
+      "id": 1
+    },
+    {
+      "name": "Martin",
+      "surname": "Alonso",
+      "email": "alonmartt@mail.com",
+      "password": "123456",
+      "token": "aG1Ptx4ZBtwJCAoyjxQy",
+      "id": 2
+    },
+    {
+      "name": "Perez",
+      "surname": "Gonzales",
+      "email": "gonzaperez@mail.com",
+      "password": "123456",
+      "token": "aG1Ptx4ZBtwJCAoyjxQy",
+      "id": 2
+    }
+  ],
+  "products": []
+}

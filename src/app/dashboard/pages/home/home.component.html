@@ -1,0 +1,36 @@
+<div class="grid">
+  <div class="col-8">
+    <mat-card>
+      <!-- HEADER -->
+      <mat-card-header>
+        <mat-card-title>
+            <mat-icon>account_circle</mat-icon> Bienvenido 
+        </mat-card-title>
+      </mat-card-header>
+
+      <!-- CONTENIDO -->
+      <mat-card-content>
+        <h1 class="ml-4" *ngIf="authUser$ | async; let authUser ">
+          {{ authUser?.name }} {{ authUser?.surname }}
+        </h1>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="col-4">
+    <mat-card>
+      <!-- HEADER -->
+      <mat-card-header>
+        <mat-card-title>
+            <mat-icon>date_range</mat-icon> Fecha
+        </mat-card-title>
+      </mat-card-header>
+
+      <!-- CONTENIDO -->
+      <mat-card-content>
+        <h1 class="ml-4">
+          {{ todayDate | date }}
+        </h1>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

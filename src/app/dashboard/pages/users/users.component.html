@@ -1,0 +1,19 @@
+<h1>Usuarios</h1>
+<div class="mb-5">
+  <button (click)="onCreateUser()" mat-flat-button color="primary" type="button">
+    <mat-icon>add</mat-icon>
+    Crear usuario
+  </button>
+</div>
+
+<div *ngIf="isLoading$ | async; else notLoadingTemplate">
+  Esta cargando
+</div>
+<ng-template #notLoadingTemplate>
+  <app-users-table
+    [dataSource]="(users | async) || []"
+    (deleteUser)="onDeleteUser($event)"
+    (editUser)="onEditUser($event)"
+  ></app-users-table>
+</ng-template>
+
